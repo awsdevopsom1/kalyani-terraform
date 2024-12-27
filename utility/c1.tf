@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-1" # Replace with your desired region
+}
+
 data "aws_ec2_instance_type_offerings" "my_instance" {
   filter {
     name   = "instance-type"
