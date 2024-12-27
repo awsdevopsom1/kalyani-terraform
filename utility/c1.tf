@@ -10,7 +10,8 @@ data "aws_ec2_instance_type_offerings" "my_instance" {
 
   filter {
     name   = "location"
-    values = ["us-east-1a"]
+    # values = ["us-east-1a"]
+    values = ["us-east-1e"]
   }
 
   location_type = "availability-zone"
